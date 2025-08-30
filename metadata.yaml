@@ -1,0 +1,9 @@
+data_source: "https://www.ncbi.nlm.nih.gov/sra/SRR14678702"
+paper_reference: "Philip M, Rudi K, Ormaasen I, et al. METASEED: a novel approach to full-length 16S rRNA gene reconstruction from short-read data. BMC Bioinformatics. 2024;25(237)."
+github_repo: "https://github.com/norwegian-vet-inst/METASEED"
+pipeline_tools:
+  - FastQC
+  - cutadapt
+  - SPAdes
+  - BBMap
+  - METASEED

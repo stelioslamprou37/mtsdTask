@@ -1,0 +1,30 @@
+task: >
+  You have been given 18S rRNA amplicon data from marine sediments. Using the METASEED pipeline,
+  reconstruct full-length rRNA sequences and answer the following:
+
+questions:
+  - id: q1
+    stage: quality_control
+    text: "How many reads remained after adapter trimming?"
+    answer_type: integer_exact
+
+  - id: q2
+    stage: assembly
+    text: "How many contigs were assembled from the reads?"
+    answer_type: integer_exact
+
+  - id: q3
+    stage: alignment
+    text: "What was the average alignment identity (%) of the assembled rRNA contigs?"
+    answer_type: numeric_percent
+    tolerance: 0.5
+
+  - id: q4
+    stage: reconstruction
+    text: "How many full-length 18S rRNA genes were reconstructed?"
+    answer_type: integer_exact
+
+  - id: q5
+    stage: annotation
+    text: "Which genus was most abundant among the reconstructed rRNA genes?"
+    answer_type: string_exact
