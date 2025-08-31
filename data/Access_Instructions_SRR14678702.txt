@@ -1,0 +1,33 @@
+How to Access the File: SRR14678702.fastq
+-----------------------------------------
+
+1. The file SRR14678702.fastq is available in the NCBI Sequence Read Archive (SRA).
+
+2. You can access it directly from the SRA using the accession number SRR14678702.
+
+3. To download the file, use the following methods:
+
+   a) Using the SRA Toolkit (preferred method):
+      - Install SRA Toolkit from: https://github.com/ncbi/sra-tools
+      - Run the command:
+        fasterq-dump SRR14678702
+
+   b) Directly from the NCBI website:
+      - Visit: https://www.ncbi.nlm.nih.gov/sra/SRR14678702
+      - Click on the "Data Access" or "Download" links to retrieve the FASTQ file.
+
+4. Once downloaded, you can add the file to your GitHub repository by:
+   - Copying SRR14678702.fastq into your local repository folder.
+   - Running:
+        git add SRR14678702.fastq
+        git commit -m "Add SRR14678702.fastq"
+        git push origin main
+
+Note: Ensure the file size is manageable for GitHub. For large files, consider using Git LFS (Large File Storage):
+   - Install Git LFS: https://git-lfs.com/
+   - Run:
+        git lfs track "*.fastq"
+        git add .gitattributes
+        git add SRR14678702.fastq
+        git commit -m "Add SRR14678702.fastq with Git LFS"
+        git push origin main
